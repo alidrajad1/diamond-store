@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.top-up-section {
+  padding-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+.user-id-box h2,
+.membership-options h3,
+.diamond-options h3,
+.payment-options h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--third-color);
+}
+
+.user-id-box,
+.membership-options,
+.diamond-options,
+.payment-options {
+  margin: 2rem auto;
+  max-width: 600px;
+  background-color: var(--primary-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.id {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.membership-cards,
+.diamond-cards,
+.payment-methods {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.card,
+.diamond-card,
+.method {
+  background-color: var(--third-color);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.card.active,
+.diamond-card.active,
+.method.active {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.promo-box,
+.whatsapp-box {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.promo-box input,
+.whatsapp-box input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.order-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+
+  .promo-box input,
+  .whatsapp-box input,
+  .id {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

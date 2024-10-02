@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-color: #1E1E1E;
+    --secondary-color: #434343;
+    --third-color: #d7d7d7;
+  }
+  
+  body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to bottom, #434343, #1E1E1E);
+    font-family: "poppins", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .nav-logo img {
+    width: 23px;
+    margin-right: 5px;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem; 
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-links {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem; 
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.nav-item .nav-links:hover {
+   transform: scale(1.1);
+
+}
+  .profile-picture {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+  
+
+  footer {
+    background-color: var(--primary-color);
+    padding: 40px 0;
+    color: white;
+    z-index: 1000;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 50px;
+  }
+  
+  .footer-about {
+    max-width: 250px;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-about p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .footer-games ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-games ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-games ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-games ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social h4,
+  .footer-games h4,
+  .footer-payment h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons box-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-payment .payment-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-top: 1px solid var(--secondary-color);
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section-title {
+      font-size: 18px;
+      text-align: center;
+      margin-left: 0;
+    }
+  
+    .store-container {
+      padding: 10px;
+    }
+  
+    .product {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+  
+    .footer-container {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    .footer-container {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+  
+    .footer-about,
+    .footer-games,
+    .footer-payment {
+      text-align: center;
+    }
+  }
