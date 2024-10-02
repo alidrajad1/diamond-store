@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo"><img src="../img/Logo.png" alt="">Maseka Topup</a>
+            <a href="dashboard.php" class="nav-logo"><img src="../img/Logo.png" alt="">Maseka Topup</a>
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="dashboard.php" class="nav-links">Home</a>

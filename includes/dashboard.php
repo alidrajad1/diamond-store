@@ -35,12 +35,10 @@ $username = $_SESSION['username'];
     
     const sessionDuration = <?php echo $session_duration * 1000; ?>; 
 
-
     function sessionTimeout() {
         alert('Sesi telah berakhir, Anda akan diarahkan ke halaman login.');
         window.location.href = '../index.html';
     }
-
 
     setTimeout(sessionTimeout, sessionDuration);
 </script>
