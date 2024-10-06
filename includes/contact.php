@@ -1,26 +1,4 @@
-<?php
-session_start();
-
-$session_duration = 1800; 
-
-if (!isset($_SESSION['username'])) {
-    header("Location: index.php");
-    exit();
-}
-
-
-if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $session_duration) {
-
-    session_unset();
-    session_destroy();
-    header("Location: index.php");
-    exit();
-}
-
-$_SESSION['last_activity'] = time(); 
-
-$username = $_SESSION['username'];
-?>
+<?php include('session_handler.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,25 +9,13 @@ $username = $_SESSION['username'];
     <title>MASEKA TOPUP</title>
     <link rel="stylesheet" href="../css/contact.css"/>
     <link rel="stylesheet" href="../css/headerfooter.css"/>
-    <script>
-    
-    const sessionDuration = <?php echo $session_duration * 1000; ?>; 
-
-
-    function sessionTimeout() {
-        alert('Sesi telah berakhir, Anda akan diarahkan ke halaman login.');
-        window.location.href = '../index.html';
-    }
-
-
-    setTimeout(sessionTimeout, sessionDuration);
-</script>
   </head>
   <body>
 
   <?php include('header.php');
 ?>
-    
+        <input type="hidden" id="session-duration" value="<?php echo $session_duration; ?>" />
+
     <div class="container">
       <div class="container">
         <h2>Our Support Team</h2>
@@ -97,6 +63,6 @@ $username = $_SESSION['username'];
 
 <?php include('footer.php');
 ?>
-
+  <script src="../js/session.js"></script>
   </body>
 </html>

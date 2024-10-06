@@ -6,18 +6,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+   
+    $default_profile_pic = '../img/profile/default.jpg';
+
   
-    $_SESSION['registered_user'] = [
-        'name' => $name,
-        'email' => $email,
-        'password' => $password 
-    ];
+    $user_data = $name . "," . $email . "," . $hashed_password . "," . $default_profile_pic . "\n";
+    file_put_contents('users.txt', $user_data, FILE_APPEND);
 
 
     $_SESSION['username'] = $name;
+    $_SESSION['email'] = $email;
+    $_SESSION['profile_pic'] = $default_profile_pic;
 
-    setcookie('username', $username, time() + 86400, "/"); 
-   
+    setcookie('username', $name, time() + 86400, "/");
+
     header("Location: dashboard.php");
-    exit(); 
+    exit();
 }
+?>

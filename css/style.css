@@ -19,6 +19,29 @@ body {
   height: 100vh;
 }
 
+/* Notifikasi Styling */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.notification.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.notification.success {
+  background-color: #4CAF50;
+}
+
 .container {
   background-color: var(--third-color);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);

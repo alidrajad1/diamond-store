@@ -12,9 +12,10 @@
                 <li class="nav-item">
                     <a href="contact.php" class="nav-links">Contact</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item profile" >
                     <a href="profile.php" class="nav-links">
-                        <img src="../img/profile/epic.jpg" alt="Profile Picture" class="profile-picture">
+                        <span class="user-name"><?php echo htmlspecialchars($_SESSION['username']); ?></span>
+                        <img src="<?php echo htmlspecialchars($_SESSION['profile_pic']); ?>" alt="Profile Picture" class="profile-picture">
                     </a>
                 </li>
             </ul>

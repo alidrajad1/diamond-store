@@ -2,11 +2,12 @@
         <div class="footer-container">
           <div class="footer-about">
             <img src="../img/Logo.png" alt="Diamond Store Logo" class="footer-logo" />
+            <h6>Maseka Topup</h6>
             <p>Diamond Store is your trusted platform for purchasing in-game diamonds for all popular games. We provide secure, fast, and reliable services to gamers worldwide.</p>
           </div>
       
-          <div class="footer-games">
-            <h4>Popular Games</h4>
+          <div class="footer-list">
+            <h4>Game List</h4>
             <ul>
               <li><a href="#">Mobile Legends</a></li>
               <li><a href="#">Free Fire</a></li>
@@ -16,6 +17,17 @@
               <li><a href="#">Call of Duty Mobile</a></li>
               <li><a href="#">FC24</a></li>
               <li><a href="#">Genshin Impact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-list">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">All Games</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">About</a></li>
             </ul>
           </div>
       
