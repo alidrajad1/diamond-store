@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-* {
+** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: "Poppins", sans-serif;
+    --primary-color: #1E1E1E;
+    --secondary-color: #434343;
+    --third-color:#d7d7d7;
+  }
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -66,17 +70,6 @@ body {
     text-align: center;
 }
 
-.edit-profile {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    background-color: #434343;
-    border-radius: 10px;
-    padding: 50px;
-    text-align: center;
-}
-
 .profile-picture {
     display: flex;
     justify-content: center;
@@ -105,17 +98,36 @@ body {
     margin-bottom: 20px;
 }
 
+.edit-profile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    margin: auto;
+}
+
+.edit-profile h2 {
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    width: 100%;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
 
 .form-group label {
-    text-align: start;
     display: block;
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #d7d7d7;
 }
 
 .form-group input[type="text"],
@@ -123,19 +135,14 @@ body {
 .form-group input[type="file"],
 .form-group input[type="password"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    background-color: #3E3E3E;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
     font-size: 14px;
-    color: #333;
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group input[type="file"]:focus {
-    outline: none;
-    border-color: #007bff;
-}
 
 .logout-btn, .save-btn {
     display: block;
@@ -158,9 +165,36 @@ body {
     color: var(--primary-color);
   }
 
-  
+  .help, .security {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    background-color: #434343;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: start;
+}
 
-/* Responsive Design */
+.security h2, .help h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.security li, .help li{
+    padding: 0 10px 0;
+    font-weight: 600;
+}
+
+.security p, .help p{
+    padding: 0 10px 0;
+}
+
+.security h3{
+    padding: 0 10px 0;
+    font-weight: 600;
+}
+
 @media screen and (max-width: 992px) {
     .container {
         flex-direction: column;
