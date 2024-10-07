@@ -1,3 +1,1 @@
-admin,admin@admin,$2y$10$16ngGgUHDboemC.9QDykqeCCnBD/QlxBnDQzyi.YHU0ocfjl5ZYGS,../img/profile/default.png
-ali,ali@ali,$2y$10$pOVr/OvHaqC51DWspHvkJuQbBqeY0mu8.y2Ysdk1tyoSBD1QNrenO,../img/profile/default.png
-admin,admin@admin,$2y$10$16ngGgUHDboemC.9QDykqeCCnBD/QlxBnDQzyi.YHU0ocfjl5ZYGS,../img/profile/default.jpg
+admin,admin@admin,$2y$10$bof7EUUVzOZljnE8Tf46Su3c8gHXPz9eT.eVz1/RJDec1x/wSU/4q,../img/profile/profile.jpg

@@ -64,7 +64,7 @@ $email = $_SESSION['email'];
 
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" value="<?php echo htmlspecialchars($password); ?>" required>
             </div>
 
             <div class="form-group">

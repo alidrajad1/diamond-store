@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header("Location: dashboard.php");
         exit();
     } else {
-        header("Location: ../index.php?error=Username atau Password salah!");
+        header("Location: ../index.php?error=Wrong password or username!");
         exit();
     }
 }
