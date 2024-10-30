@@ -19,8 +19,8 @@
         <div class="settings">
             <h3>Settings</h3>
             <ul>
-                <li><a href="./profile.php">Profile</a></li>
-                <li><a href="./help.php">Help</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="help.php">Help</a></li>
             </ul>
         </div>
     </div>
