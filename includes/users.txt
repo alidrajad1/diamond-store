@@ -1,1 +1,4 @@
-admin,admin@admin,$2y$10$bof7EUUVzOZljnE8Tf46Su3c8gHXPz9eT.eVz1/RJDec1x/wSU/4q,../img/profile/profile.jpg
+admin,admin@admin,$2y$10$BZxUh2glbDVhjIaPIbv3TucVejCmAGWCnAJcAN2FeYZk3a2fSFdBm,../img/profile/default.jpg
+maseka,maseka@maseka,$2y$10$Y7sgGjMbAFb32ABSVXthse55zOV5xqULNobaAwo/6UAXrJVXSqP2K,../img/profile/default.jpg
+ali,ali@ali,$2y$10$AwhpWkmyeT.8WtrgMJYqBudViIyV4gsSK.75TQ7BxmycdDo6DUqR2,../img/profile/default.jpg
+adit,adit@adit,$2y$10$j3UdNK5z6ozm6sepl4/rMOzFo32.udwjlLvy18h/bnWZPGIN3jH1y,../img/profile/default.jpg

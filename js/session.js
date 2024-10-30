@@ -2,7 +2,7 @@ const sessionDuration = parseInt(document.getElementById('session-duration').val
 
 
 function sessionTimeout() {
-    alert('Sesi telah berakhir, Anda akan diarahkan ke halaman login.');
+    alert('The session has ended, you will be redirected to the login page.');
     window.location.href = '../index.php';
 }
 
